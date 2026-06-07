@@ -3,104 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI FELIX PIXEL - Publicidad y Marketing Digital con Inteligencia Artificial. Transforma tu negocio con estrategias de marketing inteligentes">
-    <meta name="keywords" content="marketing digital, IA, publicidad, analytics, SEO">
+    <meta name="description" content="AI FELIX PIXEL - Publicidad y Marketing Digital con IA. Transforma tu negocio con estrategias innovadoras.">
+    <meta name="keywords" content="marketing digital, IA, publicidad, analytics, estrategia digital">
     <meta name="author" content="AI FELIX PIXEL">
-    <meta property="og:title" content="AI FELIX PIXEL — Publicidad & Marketing Digital con IA">
+    <meta property="og:title" content="AI FELIX PIXEL — Publicidad & Marketing Digital">
     <meta property="og:description" content="Revoluciona tu marketing con soluciones impulsadas por IA">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://felipeVcreadorl.github.io/aifelixpixel/">
-    <meta name="theme-color" content="#2d0052">
-    <title>AI FELIX PIXEL — Publicidad & Marketing Digital con IA</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23ff00ff' width='100' height='100' rx='10'/><text x='50' y='65' font-size='60' fill='%23fff' text-anchor='middle' font-weight='bold'>AI</text></svg>">
+    <meta name="theme-color" content="#000000">
+    <title>AI FELIX PIXEL — Publicidad & Marketing Digital</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="container">
-            <div class="header__logo">
-                <h1>🎨 AI FELIX PIXEL</h1>
-            </div>
-            <nav class="header__nav">
-                <a href="#features" class="nav-link">Servicios</a>
-                <a href="#portfolio" class="nav-link">Portafolio</a>
-                <a href="#contact" class="nav-link">Contacto</a>
-            </nav>
+        <div class="header__container">
+            <div class="logo">AI FELIX PIXEL</div>
             <button class="menu-toggle" id="menuToggle">☰</button>
         </div>
+        <nav class="nav" id="nav">
+            <a href="#vision" class="nav__link">Visión</a>
+            <a href="#services" class="nav__link">Servicios</a>
+            <a href="#projects" class="nav__link">Proyectos</a>
+            <a href="#contact" class="nav__link">Contacto</a>
+        </nav>
     </header>
 
-    <!-- MAIN CONTENT -->
     <main>
         <!-- HERO SECTION -->
         <section class="hero">
-            <div class="container">
-                <h2 class="hero__title">Publicidad Digital Impulsada por IA</h2>
-                <p class="hero__subtitle">Transforma tu negocio con estrategias de marketing inteligentes</p>
-                <button class="btn btn--primary" onclick="scrollToSection('contact')">Solicitar Demo</button>
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    El futuro del marketing es hoy
+                </h1>
+                <p class="hero__subtitle">Inteligencia Artificial + Marketing Digital = Resultados extraordinarios</p>
+                <button class="btn btn--large" onclick="scrollToSection('contact')">Comienza ahora</button>
             </div>
+            <div class="hero__background"></div>
         </section>
 
-        <!-- FEATURES SECTION -->
-        <section id="features" class="features">
+        <!-- VISION SECTION -->
+        <section id="vision" class="vision">
             <div class="container">
-                <h2 class="section-title">Nuestros Servicios</h2>
-                <div class="features__grid">
-                    <div class="feature-card">
-                        <h3 class="feature-card__title">📊 Análisis Predictivo</h3>
-                        <p class="feature-card__description">Utiliza IA para predecir tendencias del mercado y comportamiento del cliente con precisión.</p>
+                <div class="vision__grid">
+                    <div class="vision__item">
+                        <h2>Innovación</h2>
+                        <p>Tecnología de vanguardia para tu negocio</p>
                     </div>
-                    <div class="feature-card">
-                        <h3 class="feature-card__title">🎯 Segmentación Avanzada</h3>
-                        <p class="feature-card__description">Identifica y segmenta audiencias con precisión utilizando machine learning avanzado.</p>
+                    <div class="vision__item">
+                        <h2>Rapidez</h2>
+                        <p>Resultados en tiempo real</p>
                     </div>
-                    <div class="feature-card">
-                        <h3 class="feature-card__title">💡 Contenido Creativo</h3>
-                        <p class="feature-card__description">Genera contenido publicitario optimizado automáticamente por IA para máximo impacto.</p>
+                    <div class="vision__item">
+                        <h2>Precisión</h2>
+                        <p>IA que entiende tu audiencia</p>
                     </div>
-                    <div class="feature-card">
-                        <h3 class="feature-card__title">📈 ROI Mejorado</h3>
-                        <p class="feature-card__description">Maximiza el retorno de inversión con campañas personalizadas y datos en tiempo real.</p>
+                    <div class="vision__item">
+                        <h2>Escalabilidad</h2>
+                        <p>Crece sin límites</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA SECTION -->
-        <section class="cta">
+        <!-- SERVICES SECTION -->
+        <section id="services" class="services">
             <div class="container">
-                <h2>¿Listo para revolucionar tu marketing?</h2>
-                <p>Descubre cómo nuestras soluciones con IA pueden transformar tu negocio y aumentar tus ventas.</p>
-                <button class="btn btn--secondary" onclick="scrollToSection('contact')">Consulta Gratuita</button>
+                <h2 class="section-title">Servicios</h2>
+                <div class="services__grid">
+                    <div class="service-card">
+                        <h3>Análisis IA</h3>
+                        <p>Predicciones precisas del comportamiento del consumidor</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Marketing Automático</h3>
+                        <p>Campañas que se optimizan solas</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Estrategia Digital</h3>
+                        <p>Plan personalizado para tu marca</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>ROI Máximo</h3>
+                        <p>Cada peso invertido genera retorno</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- PORTFOLIO SECTION -->
-        <section id="portfolio" class="portfolio">
+        <!-- STATS SECTION -->
+        <section class="stats">
             <div class="container">
-                <h2 class="section-title">Portafolio de Proyectos</h2>
-                <div class="portfolio__grid">
-                    <div class="project-card">
-                        <div class="project-card__image">🎬</div>
-                        <div class="project-card__content">
-                            <h3 class="project-card__title">Campaña Viral</h3>
-                            <p class="project-card__description">Estrategia de contenido que generó 2M de visualizaciones en redes sociales.</p>
-                        </div>
+                <div class="stats__grid">
+                    <div class="stat-item">
+                        <div class="stat-value">2M+</div>
+                        <div class="stat-label">Visualizaciones</div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-card__image">📱</div>
-                        <div class="project-card__content">
-                            <h3 class="project-card__title">App Marketing</h3>
-                            <p class="project-card__description">Promoción exitosa de aplicación móvil con IA, 500K+ descargas.</p>
-                        </div>
+                    <div class="stat-item">
+                        <div class="stat-value">350%</div>
+                        <div class="stat-label">Aumento de Ventas</div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-card__image">🛍️</div>
-                        <div class="project-card__content">
-                            <h3 class="project-card__title">E-commerce Boost</h3>
-                            <p class="project-card__description">Aumento de ventas en 350% mediante IA predictiva y personalizacion.</p>
-                        </div>
+                    <div class="stat-item">
+                        <div class="stat-value">500K+</div>
+                        <div class="stat-label">Descargas de Apps</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">98%</div>
+                        <div class="stat-label">ROI Promedio</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <div class="projects__grid">
+                    <div class="project">
+                        <div class="project__title">Campaña Viral 🎬</div>
+                        <p>2M visualizaciones en 30 días</p>
+                    </div>
+                    <div class="project">
+                        <div class="project__title">App Marketing 📱</div>
+                        <p>500K+ descargas con estrategia IA</p>
+                    </div>
+                    <div class="project">
+                        <div class="project__title">E-commerce 🛍️</div>
+                        <p>350% incremento en ventas</p>
                     </div>
                 </div>
             </div>
@@ -109,19 +138,28 @@
         <!-- CONTACT SECTION -->
         <section id="contact" class="contact">
             <div class="container">
-                <h2 class="section-title">Ponte en Contacto</h2>
+                <h2 class="section-title">Hablemos</h2>
                 <form class="contact__form" id="contactForm">
                     <div class="form-group">
-                        <input type="text" placeholder="Tu nombre" required aria-label="Nombre">
+                        <input type="text" placeholder="Tu nombre" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Tu correo electrónico" required aria-label="Correo">
+                        <input type="email" placeholder="Tu email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Tu mensaje" required aria-label="Mensaje" rows="5"></textarea>
+                        <textarea placeholder="Tu mensaje" required rows="4"></textarea>
                     </div>
-                    <button type="submit" class="btn btn--primary">Enviar Mensaje</button>
+                    <button type="submit" class="btn btn--large">Enviar</button>
                 </form>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="cta-final">
+            <div class="container">
+                <h2>¿Listo para transformar tu marketing?</h2>
+                <p>No esperes más. El futuro es ahora.</p>
+                <button class="btn btn--large" onclick="scrollToSection('contact')">Comienza tu transformación</button>
             </div>
         </section>
     </main>
@@ -129,12 +167,7 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 <strong>AI FELIX PIXEL</strong>. Todos los derechos reservados.</p>
-            <p class="footer__social">Síguenos: 
-                <a href="#" title="Facebook">f</a> 
-                <a href="#" title="Instagram">📷</a> 
-                <a href="#" title="LinkedIn">in</a>
-            </p>
+            <p>&copy; 2026 AI FELIX PIXEL. Construyendo el futuro.</p>
         </div>
     </footer>
 

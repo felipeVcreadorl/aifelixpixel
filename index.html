@@ -1,1 +1,143 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>AI FELIX PIXEL — Publicidad & Marketing Digital con IA</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"><style>/* ═══════════════════════════════════════════DESIGN SYSTEM — AI FELIX PIXELEstilo: Tesla/SpaceX brutal minimalismFuentes: Playfair Display + Barlow═══════════════════════════════════════════ */:root {--gold: #C8A84B;--gold-l: #E8C86A;--gold-p: #FFF0C0;--gold-d: #7A6020;--silver: #A8B4BC;--silver-l: #D8E0E8;--neon: #00E85A;--neon-d: #009938;--black: #030304;--dark: #07070A;--panel: #0C0C10;--white: #F2F0EC;--gray: #2A2A30;--gray-m: #484850;--gray-l: #7A7A84;--f-display: 'Playfair Display', Georgia, serif;--f-body: 'Barlow', sans-serif;--f-cond: 'Barlow Condensed', sans-serif;}/* ─ RESET ─ */*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }html { scroll-behavior:smooth; font-size:16px; }body {background: var(--black);color: var(--white);font-family: var(--f-body);font-weight: 300;line-height: 1.6;overflow-x: hidden;cursor: none;}/* ─ CUSTOM CURSOR ─ */#cur {width:10px; height:10px;background: var(--neon);border-radius:50%;position:fixed; top:0; left:0;pointer-events:none; z-index:9999;transform:translate(-50%,-50%);transition:transform .1s ease, width .2s, height .2s;mix-blend-mode:difference;}#cur-ring {width:38px; height:38px;border:1px solid rgba(200,168,75,0.5);border-radius:50%;position:fixed; top:0; left:0;pointer-events:none; z-index:9998;transform:translate(-50%,-50%);transition:all .18s ease;}body:hover #cur { width:10px; height:10px; }a:hover ~ #cur, button:hover ~ #cur { width:20px; height:20px; }/* ─ SCROLLBAR ─ */::-webkit-scrollbar { width:3px; }::-webkit-scrollbar-track { background:var(--black); }::-webkit-scrollbar-thumb { background:var(--gold); }/* ═══════════════════════════════NAVIGATION═══════════════════════════════ */nav {position:fixed; top:0; left:0; right:0; z-index:500;display:flex; justify-content:space-between; align-items:center;padding:28px 60px;transition:all .4s ease;}nav.scrolled {background:rgba(3,3,4,0.92);backdrop-filter:blur(20px);padding:18px 60px;border-bottom:1px solid rgba(200,168,75,0.1);}.nav-logo {display:flex; flex-direction:column; gap:2px;}.nav-logo-main {font-family: var(--f-display);font-weight:900; font-style:italic;font-size:20px; letter-spacing:0.04em;background: linear-gradient(135deg, var(--gold-p), var(--gold), var(--gold-l));-webkit-background-clip:text; -webkit-text-fill-color:transparent;background-clip:text; line-height:1;}.nav-logo-sub {font-family: var(--f-cond);font-size:8px; font-weight:600;color:var(--neon); letter-spacing:.55em;text-transform:uppercase;}.nav-links {display:flex; gap:48px; list-style:none;align-items:center;}.nav-links a {font-family: var(--f-cond);font-size:13px; font-weight:600;color:var(--silver); text-decoration:none;letter-spacing:.2em; text-transform:uppercase;transition:color .3s;position:relative;}.nav-links a::after {content:''; position:absolute;bottom:-4px; left:0; right:0; height:1px;background:var(--neon); transform:scaleX(0);transition:transform .3s ease;}.nav-links a:hover { color:var(--white); }.nav-links a:hover::after { transform:scaleX(1); }.nav-cta {background: linear-gradient(135deg, var(--gold), var(--gold-l));color:var(--black) !important;padding:10px 28px;font-weight:800 !important;transition:all .3s !important;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px));}.nav-cta:hover {transform:translateY(-2px);box-shadow:0 8px 30px rgba(200,168,75,0.4);}.nav-cta::after { display:none !important; }.nav-menu-btn {display:none;background:none; border:none; cursor:none;flex-direction:column; gap:5px; padding:8px;}.nav-menu-btn span {display:block; width:24px; height:1px;background:var(--white); transition:all .3s;}/* Mobile nav */.mobile-nav {display:none; position:fixed;inset:0; background:rgba(3,3,4,0.98);backdrop-filter:blur(20px);z-index:490; flex-direction:column;align-items:center; justify-content:center; gap:40px;}.mobile-nav.open { display:flex; }.mobile-nav a {font-family: var(--f-display);font-size:clamp(28px,6vw,48px);font-weight:700; color:var(--white);text-decoration:none; transition:color .3s;}.mobile-nav a:hover { color:var(--gold-l); }/* ═══════════════════════════════HERO — FULL SCREEN IMPACT═══════════════════════════════ */.hero {height:100vh; min-height:700px;display:flex; align-items:center;position:relative; overflow:hidden;}/* Animated background layers */.hero-bg-grid {position:absolute; inset:0;background-image:linear-gradient(rgba(200,168,75,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(200,168,75,0.035) 1px,transparent 1px);background-size:72px 72px;animation:gridDrift 40s linear infinite;}@keyframes gridDrift {from { transform:translate(0,0); }to { transform:translate(72px,72px); }}.hero-radial {position:absolute; inset:0;background:radial-gradient(ellipse 120% 70% at 50% -10%,rgba(200,168,75,0.14) 0%,transparent 55%),radial-gradient(ellipse 80% 80% at 90% 90%,rgba(0,232,90,0.05) 0%,transparent 50%),radial-gradient(ellipse 60% 60% at 5% 60%,rgba(168,180,188,0.05) 0%,transparent 50%);}/* Floating orbs */.hero-orb {position:absolute;border-radius:50%;pointer-events:none;}.orb-1 {width:600px; height:600px;top:-200px; right:-100px;background:radial-gradient(circle,rgba(200,168,75,0.06),transparent 70%);animation:orbFloat1 12s ease-in-out infinite;}.orb-2 {width:400px; height:400px;bottom:-100px; left:-50px;background:radial-gradient(circle,rgba(0,232,90,0.05),transparent 70%);animation:orbFloat2 15s ease-in-out infinite;}@keyframes orbFloat1 {0%,100% { transform:translate(0,0) scale(1); }50% { transform:translate(-30px,30px) scale(1.05); }}@keyframes orbFloat2 {0%,100% { transform:translate(0,0) scale(1); }50% { transform:translate(20px,-20px) scale(0.95); }}/* Scan line effect */.hero-scan {position:absolute; inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,0.06) 3px,rgba(0,0,0,0.06) 4px);pointer-events:none;}.hero-content {position:relative; z-index:2;padding:0 60px;max-width:1400px; margin:0 auto; width:100%;}.hero-eyebrow {display:flex; align-items:center; gap:16px;margin-bottom:28px;animation:fadeUp .8s ease .2s both;}.hero-eyebrow-line {width:48px; height:1px; background:var(--neon);}.hero-eyebrow-text {font-family: var(--f-cond);font-size:12px; font-weight:700;color:var(--neon); letter-spacing:.55em;text-transform:uppercase;}.hero-title {font-family: var(--f-display);font-weight:900;font-size:clamp(58px,9vw,130px);line-height:.88; letter-spacing:-.02em;animation:fadeUp .8s ease .35s both;}.hero-title .line-gold {background:linear-gradient(135deg,var(--gold-p),var(--gold),var(--gold-l),var(--gold-p));-webkit-background-clip:text; -webkit-text-fill-color:transparent;background-clip:text; display:block; font-style:italic;}.hero-title .line-white { color:var(--white); display:block; }.hero-title .line-silver {background:linear-gradient(135deg,var(--silver-l),var(--silver));-webkit-background-clip:text; -webkit-text-fill-color:transparent;background-clip:text; display:block;font-size:.48em; font-style:normal;font-family: var(--f-cond);font-weight:300; letter-spacing:.15em;margin-top:12px;}.hero-desc {font-family: var(--f-body);font-size:clamp(16px,1.8vw,22px);font-weight:300; color:var(--silver);max-width:560px; line-height:1.65;margin:36px 0 48px;animation:fadeUp .8s ease .5s both;}.hero-desc strong { color:var(--white); font-weight:600; }.hero-actions {display:flex; gap:20px; align-items:center; flex-wrap:wrap;animation:fadeUp .8s ease .65s both;}.btn-primary {display:inline-flex; align-items:center; gap:10px;background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--black); padding:18px 44px;font-family: var(--f-cond);font-weight:800; font-size:14px;letter-spacing:.25em; text-transform:uppercase;text-decoration:none; transition:all .3s;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px));}.btn-primary:hover {transform:translateY(-3px);box-shadow:0 16px 48px rgba(200,168,75,0.45);}.btn-ghost {display:inline-flex; align-items:center; gap:10px;border:1px solid rgba(255,255,255,0.2);color:var(--white); padding:17px 40px;font-family: var(--f-cond);font-weight:600; font-size:14px;letter-spacing:.25em; text-transform:uppercase;text-decoration:none; transition:all .3s;background:rgba(255,255,255,0.02);}.btn-ghost:hover {border-color:var(--neon);color:var(--neon);background:rgba(0,232,90,0.05);}.hero-scroll {position:absolute; bottom:40px; left:60px; z-index:2;display:flex; flex-direction:column; align-items:flex-start; gap:12px;animation:fadeUp 1s ease 1s both;}.scroll-indicator {display:flex; align-items:center; gap:12px;}.scroll-line {width:60px; height:1px;background:linear-gradient(90deg,var(--gold),transparent);animation:scrollPulse 2s ease-in-out infinite;}@keyframes scrollPulse {0%,100% { opacity:1; }50% { opacity:0.3; }}.scroll-text {font-family: var(--f-cond);font-size:10px; font-weight:600;color:var(--gray-l); letter-spacing:.4em;text-transform:uppercase;}/* Hero right — floating stats */.hero-stats {position:absolute; right:60px; top:50%;transform:translateY(-50%);display:flex; flex-direction:column; gap:24px;z-index:2;animation:fadeLeft .8s ease .8s both;}@keyframes fadeLeft {from { opacity:0; transform:translateY(-50%) translateX(30px); }to { opacity:1; transform:translateY(-50%) translateX(0); }}.hero-stat {text-align:right; padding:16px 0;border-right:2px solid transparent;padding-right:24px;transition:border-color .3s;}.hero-stat:hover { border-right-color:var(--gold); }.hero-stat-num {font-family: var(--f-display);font-weight:700;font-size:clamp(28px,4vw,48px);line-height:1;background:linear-gradient(135deg,var(--gold-p),var(--gold));-webkit-background-clip:text; -webkit-text-fill-color:transparent;background-clip:text;}.hero-stat-label {font-family: var(--f-cond);font-size:10px; font-weight:600;color:var(--gray-l); letter-spacing:.3em;text-transform:uppercase; margin-top:4px;}@keyframes fadeUp {from { opacity:0; transform:translateY(40px); }to { opacity:1; transform:translateY(0); }}/* ═══════════════════════════════MARQUEE STRIP═══════════════════════════════ */.marquee-strip {border-top:1px solid rgba(200,168,75,0.1);border-bottom:1px solid rgba(200,168,75,0.1);background:rgba(200,168,75,0.03);padding:16px 0; overflow:hidden;}.marquee-track {display:flex; white-space:nowrap;animation:marquee 30s linear infinite;}.marquee-item {display:inline-flex; align-items:center; gap:20px;padding:0 36px;font-family: var(--f-cond);font-size:12px; font-weight:600;color:var(--silver); letter-spacing:.25em;text-transform:uppercase;}.marquee-dot {width:4px; height:4px; border-radius:50%;background:var(--neon);box-shadow:0 0 8px var(--neon);}@keyframes marquee {from { transform:translateX(0); }to { transform:translateX(-50%); }}/* ═══════════════════════════════SECTIONS — BASE STYLES═══════════════════════════════ */.section {padding:140px 60px;max-width:1400px; margin:0 auto;}.section-full {padding:140px 0;}.section-inner {max-width:1400px; margin:0 auto; padding:0 60px;}.section-label {display:flex; align-items:center; gap:16px;margin-bottom:24px;}.section-label-line { width:40px; height:1px; background:var(--neon); }.section-label-text {font-family: var(--f-cond);font-size:11px; font-weight:700;color:var(--neon); letter-spacing:.5em; text-transform:uppercase;}.section-title {font-family: var(--f-display);font-weight:900;font-size:clamp(40px,5.5vw,80px);line-height:.95; letter-spacing:-.02em;margin-bottom:24px;}.section-title .gold {background:linear-gradient(135deg,var(--gold-p),var(--gold));-webkit-background-clip:text; -webkit-text-fill-color:transparent;background-clip:text; font-style:italic;}.section-title .neon { color:var(--neon); }.section-desc {font-size:clamp(16px,1.6vw,20px);font-weight:300; color:var(--silver);max-width:560px; line-height:1.7;}/* Reveal animation */.reveal {opacity:0; transform:translateY(40px);transition:opacity .8s ease, transform .8s ease;}.reveal.visible { opacity:1; transform:translateY(0); }/* ═══════════════════════════════SECTION 1 — NOSOTROS / INTRO═══════════════════════════════ */.intro-section {background:var(--dark);border-top:1px solid rgba(200,168,75,0.08);border-bottom:1px solid rgba(200,168,75,0.08);}.intro-grid {display:grid; grid-template-columns:1fr 1fr; gap:100px;align-items:center;}.intro-left {}.intro-right {display:flex; flex-direction:column; gap:28px;}.intro-stat-card {padding:28px 32px;border:1px solid rgba(200,168,75,0.12);background:rgba(200,168,75,0.03);position:relative; overflow:hidden;transition:all .4s;}.intro-stat-card::before {content:'';position:absolute; top:0; left:0; right:0; height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0; transition:opacity .4s;}.intro-stat-card:hover { border-color:rgba(200,168,75,0.3); }.intro-stat-card:hover::before { opacity:1; }.intro-stat-num {font-family: var(--f-display);font-weight:700;font-size:clamp(36px,4vw,52px);line-height:1;background:linear-gradient(135deg,var(--gold-p),var(--gold));-webkit-background-clip:text; -webkit-text-fill-color:transparent;background-clip:text;}.intro-stat-label {font-family: var(--f-cond);font-size:13px; font-weight:600;color:var(--silver); letter-spacing:.2em;text-transform:uppercase; margin-top:6px;}.intro-stat-sub {font-size:14px; color:var(--gray-l);font-weight:300; margin-top:8px; line-height:1.5;}/* ═══════════════════════════════SECTION 2 — SERVICIOS═══════════════════════════════ */.services-section {}.services-header {display:grid; grid-template-columns:1fr 1fr;gap:80px; align-items:end; margin-bottom:80px;}.services-grid {display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(200,168,75,0.08);border:1px solid rgba(200,168,75,0.08);}.service-card {background:var(--black);padding:52px 44px;position:relative; overflow:hidden;transition:all .4s; cursor:default;}.service-card::before {content:'';position:absolute; inset:0;background:linear-gradient(135deg,rgba(200,168,75,0.06),transparent);opacity:0; transition:opacity .4s;}.service-card::after {content:'';position:absolute; top:0; left:0; right:0; height:2px;background:linear-gradient(90deg,var(--gold),var(--neon));transform:scaleX(0); transform-origin:left;transition:transform .4s ease;}.service-card:hover::before { opacity:1; }.service-card:hover::after { transform:scaleX(1); }.service-num {font-family: var(--f-cond);font-size:11px; font-weight:700;color:var(--neon); letter-spacing:.5em; margin-bottom:28px;}.service-icon {font-size:36px; display:block; margin-bottom:20px;transition:transform .4s;}.service-card:hover .service-icon { transform:scale(1.1) translateY(-4px); }.service-name {font-family: var(--f-cond);font-size:clamp(18px,2vw,22px); font-weight:800;letter-spacing:.08em; text-transform:uppercase;color:var(--white); margin-bottom:14px;}.service-desc {font-size:15px; font-weight:300;color:var(--silver); line-height:1.7;}.service-tools {display:flex; flex-wrap:wrap; gap:6px; margin-top:24px;}.tool-tag {font-family: var(--f-cond);font-size:9px; font-weight:700;color:var(--gold-l); letter-spacing:.2em;text-transform:uppercase; padding:3px 10px;border:1px solid rgba(200,168,75,0.2);background:rgba(200,168,75,0.05);}/* Full width service card */.service-card.wide {grid-column:span 3;display:grid; grid-template-columns:1fr 2fr;gap:60px; align-items:center;}/* ═══════════════════════════════SECTION 3 — GLOBAL LEARN SWIFT═══════════════════════════════ */.learn-section {background:var(--panel);border-top:1px solid rgba(0,232,90,0.08);border-bottom:1px solid rgba(0,232,90,0.08);}.learn-inner {display:grid; grid-template-columns:1fr 1fr; gap:100px; align-items:center;}.learn-right {}.learn-badge {display:inline-flex; align-items:center; gap:8px;background:rgba(0,232,90,0.07);border:1px solid rgba(0,232,90,0.25);padding:6px 20px; margin-bottom:32px;}.learn-badge-dot {width:7px; height:7px; border-radius:50%;background:var(--neon);box-shadow:0 0 12px var(--neon);animation:glowPulse 2s ease-in-out infinite alternate;}@keyframes glowPulse {from { box-shadow:0 0 6px var(--neon); }to { box-shadow:0 0 20px var(--neon),0 0 40px rgba(0,232,90,0.3); }}.learn-badge-text {font-family: var(--f-cond);font-size:10px; font-weight:700;color:var(--neon); letter-spacing:.45em; text-transform:uppercase;}.learn-courses {display:flex; flex-direction:column; gap:12px; margin-top:40px;}.course-row {display:flex; align-items:center; gap:20px;padding:18px 24px;border:1px solid rgba(255,255,255,0.05);background:rgba(255,255,255,0.02);transition:all .3s;cursor:default;}.course-row:hover {border-color:rgba(0,232,90,0.25);background:rgba(0,232,90,0.04);transform:translateX(6px);}.course-num {font-family: var(--f-cond);font-size:11px; font-weight:700;color:var(--neon); letter-spacing:.3em; min-width:32px;}.course-name {font-family: var(--f-cond);font-size:15px; font-weight:700;color:var(--white); letter-spacing:.05em;text-transform:uppercase; flex:1;}.course-arrow {color:var(--neon); font-size:14px;opacity:0; transition:opacity .3s, transform .3s;transform:translateX(-8px);}.course-row:hover .course-arrow {opacity:1; transform:translateX(0);}/* Visual orb for Learn section */.learn-visual {position:relative; height:500px;display:flex; align-items:center; justify-content:center;}.learn-orb {width:280px; height:280px; border-radius:50%;background:radial-gradient(circle at 40% 40%,rgba(0,232,90,0.25),rgba(0,232,90,0.05),transparent 70%);border:1px solid rgba(0,232,90,0.2);display:flex; align-items:center; justify-content:center;animation:orbPulse 6s ease-in-out infinite;position:relative;}.learn-orb::before {content:''; position:absolute; inset:-20px; border-radius:50%;border:1px solid rgba(0,232,90,0.1);animation:orbSpin 20s linear infinite;}.learn-orb::after {content:''; position:absolute; inset:-50px; border-radius:50%;border:1px solid rgba(0,232,90,0.05);animation:orbSpin 35s linear infinite reverse;}@keyframes orbPulse {0%,100% { transform:scale(1); }50% { transform:scale(1.04); }}@keyframes orbSpin {from { transform:rotate(0deg); }to { transform:rotate(360deg); }}.learn-orb-inner {text-align:center; position:relative; z-index:1;}.learn-orb-num {font-family: var(--f-display);font-size:64px; font-weight:900; line-height:1;color:var(--neon);}.learn-orb-label {font-family: var(--f-cond);font-size:11px; font-weight:700;color:var(--neon); letter-spacing:.4em;text-transform:uppercase; display:block; margin-top:4px;}/* Floating pills */.learn-pills { position:absolute; inset:0; pointer-events:none; }.lpill {position:absolute;background:rgba(0,232,90,0.08);border:1px solid rgba(0,232,90,0.2);padding:7px 16px;font-family: var(--f-cond);font-size:10px; font-weight:700;color:var(--neon); letter-spacing:.2em; text-transform:uppercase;animation:pillFloat var(--d,5s) ease-in-out infinite;animation-delay:var(--delay,0s);}.lpill:nth-child(1) { top:8%; left:0; --d:4.5s; --delay:0s; }.lpill:nth-child(2) { top:22%; right:0; --d:5.5s; --delay:.8s; }.lpill:nth-child(3) { top:52%; left:-8px; --d:6s; --delay:.3s; }.lpill:nth-child(4) { bottom:22%; right:-8px; --d:5s; --delay:1.2s; }.lpill:nth-child(5) { bottom:8%; left:18%; --d:4s; --delay:.6s; }@keyframes pillFloat {0%,100% { transform:translateY(0); }50% { transform:translateY(-10px); }}@keyframes orbSpin {from { transform:rotate(0deg); }to { transform:rotate(360deg); }}/* ═══════════════════════════════SECTION 4 — TECNOLOGÍAS / IA═══════════════════════════════ */.tech-section {}.tech-header {display:grid; grid-template-columns:1fr 1fr;gap:80px; align-items:end; margin-bo
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI FELIX PIXEL - Publicidad y Marketing Digital con Inteligencia Artificial. Transforma tu negocio con estrategias de marketing inteligentes">
+    <meta name="keywords" content="marketing digital, IA, publicidad, analytics, SEO">
+    <meta name="author" content="AI FELIX PIXEL">
+    <meta property="og:title" content="AI FELIX PIXEL — Publicidad & Marketing Digital con IA">
+    <meta property="og:description" content="Revoluciona tu marketing con soluciones impulsadas por IA">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://felipeVcreadorl.github.io/aifelixpixel/">
+    <meta name="theme-color" content="#2d0052">
+    <title>AI FELIX PIXEL — Publicidad & Marketing Digital con IA</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23ff00ff' width='100' height='100' rx='10'/><text x='50' y='65' font-size='60' fill='%23fff' text-anchor='middle' font-weight='bold'>AI</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <h1>🎨 AI FELIX PIXEL</h1>
+            </div>
+            <nav class="header__nav">
+                <a href="#features" class="nav-link">Servicios</a>
+                <a href="#portfolio" class="nav-link">Portafolio</a>
+                <a href="#contact" class="nav-link">Contacto</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container">
+                <h2 class="hero__title">Publicidad Digital Impulsada por IA</h2>
+                <p class="hero__subtitle">Transforma tu negocio con estrategias de marketing inteligentes</p>
+                <button class="btn btn--primary" onclick="scrollToSection('contact')">Solicitar Demo</button>
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <div class="features__grid">
+                    <div class="feature-card">
+                        <h3 class="feature-card__title">📊 Análisis Predictivo</h3>
+                        <p class="feature-card__description">Utiliza IA para predecir tendencias del mercado y comportamiento del cliente con precisión.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="feature-card__title">🎯 Segmentación Avanzada</h3>
+                        <p class="feature-card__description">Identifica y segmenta audiencias con precisión utilizando machine learning avanzado.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="feature-card__title">💡 Contenido Creativo</h3>
+                        <p class="feature-card__description">Genera contenido publicitario optimizado automáticamente por IA para máximo impacto.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="feature-card__title">📈 ROI Mejorado</h3>
+                        <p class="feature-card__description">Maximiza el retorno de inversión con campañas personalizadas y datos en tiempo real.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta">
+            <div class="container">
+                <h2>¿Listo para revolucionar tu marketing?</h2>
+                <p>Descubre cómo nuestras soluciones con IA pueden transformar tu negocio y aumentar tus ventas.</p>
+                <button class="btn btn--secondary" onclick="scrollToSection('contact')">Consulta Gratuita</button>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">Portafolio de Proyectos</h2>
+                <div class="portfolio__grid">
+                    <div class="project-card">
+                        <div class="project-card__image">🎬</div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Campaña Viral</h3>
+                            <p class="project-card__description">Estrategia de contenido que generó 2M de visualizaciones en redes sociales.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card__image">📱</div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">App Marketing</h3>
+                            <p class="project-card__description">Promoción exitosa de aplicación móvil con IA, 500K+ descargas.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card__image">🛍️</div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">E-commerce Boost</h3>
+                            <p class="project-card__description">Aumento de ventas en 350% mediante IA predictiva y personalizacion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Ponte en Contacto</h2>
+                <form class="contact__form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Tu nombre" required aria-label="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Tu correo electrónico" required aria-label="Correo">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tu mensaje" required aria-label="Mensaje" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 <strong>AI FELIX PIXEL</strong>. Todos los derechos reservados.</p>
+            <p class="footer__social">Síguenos: 
+                <a href="#" title="Facebook">f</a> 
+                <a href="#" title="Instagram">📷</a> 
+                <a href="#" title="LinkedIn">in</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

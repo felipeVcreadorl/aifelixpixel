@@ -4,12 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="AI FELIX PIXEL - Plataforma Futurista de Marketing Digital con IA. El futuro del marketing es ahora.">
-    <meta name="keywords" content="IA, marketing, futurista, tecnología, inteligencia artificial">
+    <meta name="keywords" content="IA, marketing, futurista, tecnología, inteligencia artificial, automatización">
     <meta name="author" content="AI FELIX PIXEL">
+    
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#00d9ff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="AI FELIX PIXEL">
+    
+    <!-- Open Graph para compartir en redes sociales -->
     <meta property="og:title" content="AI FELIX PIXEL — Plataforma Futurista">
-    <meta property="og:description" content="El futuro del marketing impulsado por IA">
-    <meta name="theme-color" content="#000">
-    <title>AI FELIX PIXEL — Plataforma Futurista</title>
+    <meta property="og:description" content="El futuro del marketing impulsado por IA | Marketing Digital Revolucionario">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://felipeVcreadorl.github.io/aifelixpixel/">
+    <meta property="og:image" content="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'><rect fill='%23000'/><text x='50%' y='40%' font-size='120' fill='%2300d9ff' text-anchor='middle' font-family='Arial' font-weight='bold'>AI FELIX PIXEL</text><text x='50%' y='65%' font-size='40' fill='%2300ff88' text-anchor='middle' font-family='Arial'>Marketing Impulsado por IA</text></svg>">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI FELIX PIXEL — Plataforma Futurista">
+    <meta name="twitter:description" content="El futuro del marketing digital con Inteligencia Artificial">
+    <meta name="twitter:image" content="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'><rect fill='%23000'/><text x='50%' y='40%' font-size='120' fill='%2300d9ff' text-anchor='middle' font-family='Arial' font-weight='bold'>AI FELIX PIXEL</text></svg>">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23000'/><text x='50%' y='50%' font-size='60' fill='%2300d9ff' text-anchor='middle' dominant-baseline='central' font-weight='bold'>◆</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect fill='%23000' rx='40'/><text x='50%' y='50%' font-size='90' fill='%2300d9ff' text-anchor='middle' dominant-baseline='central' font-weight='bold'>◆</text></svg>">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://felipeVcreadorl.github.io/aifelixpixel/">
+    
+    <!-- Preconnect para optimizar recursos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    
+    <title>AI FELIX PIXEL — Plataforma Futurista de Marketing con IA</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,9 +54,9 @@
                 <span class="logo__symbol">◆</span>
                 <span class="logo__text">AI FELIX PIXEL</span>
             </div>
-            <button class="menu-toggle" id="menuToggle">☰</button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación">☰</button>
         </div>
-        <nav class="nav" id="nav">
+        <nav class="nav" id="nav" aria-label="Navegación principal">
             <a href="#vision" class="nav__link nav__link--animated">Visión IA</a>
             <a href="#services" class="nav__link nav__link--animated">Servicios</a>
             <a href="#dashboard" class="nav__link nav__link--animated">Dashboard</a>
@@ -35,7 +66,7 @@
 
     <main>
         <!-- HERO SECTION CON HOLOGRAM -->
-        <section class="hero">
+        <section class="hero" aria-label="Sección hero principal">
             <div class="hero__grid"></div>
             <div class="hero__content">
                 <div class="hero__label">// INICIANDO SISTEMA IA</div>
@@ -61,14 +92,14 @@
                     </div>
                 </div>
 
-                <button class="btn btn--neon" onclick="scrollToSection('contact')">
+                <button class="btn btn--neon" onclick="scrollToSection('contact')" aria-label="Iniciar sesión IA">
                     <span class="btn__text">INICIAR SESIÓN IA</span>
                     <span class="btn__glow"></span>
                 </button>
             </div>
 
             <!-- HOLOGRAM EFFECT -->
-            <div class="hologram-container">
+            <div class="hologram-container" aria-hidden="true">
                 <div class="hologram-box">
                     <div class="hologram-inner">
                         <div class="hologram-layer"></div>
@@ -80,14 +111,14 @@
         </section>
 
         <!-- VISION AI SECTION -->
-        <section id="vision" class="vision-ai">
+        <section id="vision" class="vision-ai" aria-label="Módulos de IA activos">
             <div class="container">
                 <h2 class="section-title">MÓDULOS IA ACTIVOS</h2>
                 
                 <div class="vision-grid">
                     <div class="ai-module" data-level="alpha">
                         <div class="module-header">
-                            <span class="module-icon">⚡</span>
+                            <span class="module-icon" aria-hidden="true">⚡</span>
                             <span class="module-status">ACTIVO</span>
                         </div>
                         <h3>Neural Analytics</h3>
@@ -99,7 +130,7 @@
 
                     <div class="ai-module" data-level="beta">
                         <div class="module-header">
-                            <span class="module-icon">🧠</span>
+                            <span class="module-icon" aria-hidden="true">🧠</span>
                             <span class="module-status">ACTIVO</span>
                         </div>
                         <h3>Deep Learning</h3>
@@ -111,7 +142,7 @@
 
                     <div class="ai-module" data-level="gamma">
                         <div class="module-header">
-                            <span class="module-icon">🌐</span>
+                            <span class="module-icon" aria-hidden="true">🌐</span>
                             <span class="module-status">ACTIVO</span>
                         </div>
                         <h3>Quantum Processing</h3>
@@ -123,7 +154,7 @@
 
                     <div class="ai-module" data-level="delta">
                         <div class="module-header">
-                            <span class="module-icon">🔮</span>
+                            <span class="module-icon" aria-hidden="true">🔮</span>
                             <span class="module-status">ACTIVO</span>
                         </div>
                         <h3>Vision AI</h3>
@@ -135,7 +166,7 @@
 
                     <div class="ai-module" data-level="epsilon">
                         <div class="module-header">
-                            <span class="module-icon">🎯</span>
+                            <span class="module-icon" aria-hidden="true">🎯</span>
                             <span class="module-status">ACTIVO</span>
                         </div>
                         <h3>Predictive Engine</h3>
@@ -147,7 +178,7 @@
 
                     <div class="ai-module" data-level="zeta">
                         <div class="module-header">
-                            <span class="module-icon">🚀</span>
+                            <span class="module-icon" aria-hidden="true">🚀</span>
                             <span class="module-status">ACTIVO</span>
                         </div>
                         <h3>Automation Suite</h3>
@@ -161,7 +192,7 @@
         </section>
 
         <!-- SERVICES SECTION -->
-        <section id="services" class="services-futuristic">
+        <section id="services" class="services-futuristic" aria-label="Servicios tecnológicos">
             <div class="container">
                 <h2 class="section-title">SERVICIOS TECNOLÓGICOS</h2>
                 
@@ -169,7 +200,7 @@
                     <div class="service-terminal">
                         <div class="terminal-header">
                             <span class="terminal-title">$ ANALYSIS_MODULE_01.exe</span>
-                            <span class="terminal-buttons"></span>
+                            <span class="terminal-buttons" aria-hidden="true"></span>
                         </div>
                         <div class="terminal-content">
                             <p>> Análisis Predictivo IA</p>
@@ -181,7 +212,7 @@
                     <div class="service-terminal">
                         <div class="terminal-header">
                             <span class="terminal-title">$ AUTOMATION_MODULE_02.exe</span>
-                            <span class="terminal-buttons"></span>
+                            <span class="terminal-buttons" aria-hidden="true"></span>
                         </div>
                         <div class="terminal-content">
                             <p>> Marketing Automatizado</p>
@@ -193,7 +224,7 @@
                     <div class="service-terminal">
                         <div class="terminal-header">
                             <span class="terminal-title">$ STRATEGY_MODULE_03.exe</span>
-                            <span class="terminal-buttons"></span>
+                            <span class="terminal-buttons" aria-hidden="true"></span>
                         </div>
                         <div class="terminal-content">
                             <p>> Estrategia Personalizada</p>
@@ -205,7 +236,7 @@
                     <div class="service-terminal">
                         <div class="terminal-header">
                             <span class="terminal-title">$ OPTIMIZATION_MODULE_04.exe</span>
-                            <span class="terminal-buttons"></span>
+                            <span class="terminal-buttons" aria-hidden="true"></span>
                         </div>
                         <div class="terminal-content">
                             <p>> Optimización ROI</p>
@@ -218,14 +249,14 @@
         </section>
 
         <!-- DASHBOARD SECTION -->
-        <section id="dashboard" class="dashboard">
+        <section id="dashboard" class="dashboard" aria-label="Panel de control IA">
             <div class="container">
                 <h2 class="section-title">PANEL DE CONTROL IA</h2>
                 
                 <div class="dashboard-grid">
                     <div class="widget">
                         <div class="widget__header">Real-Time Analytics</div>
-                        <div class="widget__chart">
+                        <div class="widget__chart" aria-label="Gráfico de análisis en tiempo real">
                             <div class="chart-bar" style="height: 60%"></div>
                             <div class="chart-bar" style="height: 75%"></div>
                             <div class="chart-bar" style="height: 45%"></div>
@@ -236,7 +267,7 @@
 
                     <div class="widget">
                         <div class="widget__header">Performance Index</div>
-                        <div class="circular-progress">
+                        <div class="circular-progress" aria-label="Índice de rendimiento: 92%">
                             <svg viewBox="0 0 100 100">
                                 <circle cx="50" cy="50" r="45" class="circle-bg"></circle>
                                 <circle cx="50" cy="50" r="45" class="circle-progress" style="--progress: 92"></circle>
@@ -247,16 +278,16 @@
 
                     <div class="widget">
                         <div class="widget__header">Active Campaigns</div>
-                        <div class="campaign-list">
+                        <div class="campaign-list" aria-label="Campañas activas">
                             <div class="campaign-item">
-                                <div class="campaign-dot active"></div>
+                                <div class="campaign-dot active" aria-hidden="true"></div>
                                 <div class="campaign-info">
                                     <div class="campaign-name">Campaign Alpha</div>
                                     <div class="campaign-status">↑ 234% ROI</div>
                                 </div>
                             </div>
                             <div class="campaign-item">
-                                <div class="campaign-dot active"></div>
+                                <div class="campaign-dot active" aria-hidden="true"></div>
                                 <div class="campaign-info">
                                     <div class="campaign-name">Campaign Beta</div>
                                     <div class="campaign-status">↑ 187% ROI</div>
@@ -267,18 +298,18 @@
 
                     <div class="widget">
                         <div class="widget__header">System Status</div>
-                        <div class="status-items">
+                        <div class="status-items" aria-label="Estado del sistema">
                             <div class="status-item">
-                                <span class="status-dot online"></span>
-                                <span>Servers: Online</span>
+                                <span class="status-dot online" aria-hidden="true"></span>
+                                <span>Servidores: En línea</span>
                             </div>
                             <div class="status-item">
-                                <span class="status-dot online"></span>
-                                <span>AI Cores: 512/512</span>
+                                <span class="status-dot online" aria-hidden="true"></span>
+                                <span>Núcleos IA: 512/512</span>
                             </div>
                             <div class="status-item">
-                                <span class="status-dot online"></span>
-                                <span>Network: Optimal</span>
+                                <span class="status-dot online" aria-hidden="true"></span>
+                                <span>Red: Óptima</span>
                             </div>
                         </div>
                     </div>
@@ -287,27 +318,27 @@
         </section>
 
         <!-- CONTACT SECTION -->
-        <section id="contact" class="contact-futuristic">
+        <section id="contact" class="contact-futuristic" aria-label="Formulario de contacto">
             <div class="container">
                 <h2 class="section-title">INICIALIZAR CONEXIÓN</h2>
                 
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" aria-label="Formulario de contacto">
                     <div class="form-group">
-                        <input type="text" placeholder=">> Nombre del Usuario" required>
+                        <input type="text" placeholder=">> Nombre del Usuario" required aria-label="Nombre completo">
                         <span class="input-line"></span>
                     </div>
                     
                     <div class="form-group">
-                        <input type="email" placeholder=">> Email de Conexión" required>
+                        <input type="email" placeholder=">> Email de Conexión" required aria-label="Correo electrónico">
                         <span class="input-line"></span>
                     </div>
                     
                     <div class="form-group">
-                        <textarea placeholder=">> Mensaje IA" required rows="4"></textarea>
+                        <textarea placeholder=">> Mensaje IA" required rows="4" aria-label="Mensaje"></textarea>
                         <span class="input-line"></span>
                     </div>
 
-                    <button type="submit" class="btn btn--neon btn--large">
+                    <button type="submit" class="btn btn--neon btn--large" aria-label="Enviar formulario">
                         <span class="btn__text">TRANSMITIR DATOS</span>
                         <span class="btn__glow"></span>
                     </button>
@@ -316,11 +347,11 @@
         </section>
 
         <!-- CTA FINAL -->
-        <section class="cta-final">
+        <section class="cta-final" aria-label="Llamada a la acción final">
             <div class="container">
                 <h2>EL FUTURO DEL MARKETING ES AHORA</h2>
                 <p>Únete a la revolución de la Inteligencia Artificial</p>
-                <button class="btn btn--neon btn--large" onclick="scrollToSection('contact')">
+                <button class="btn btn--neon btn--large" onclick="scrollToSection('contact')" aria-label="Comenzar transformación digital">
                     <span class="btn__text">COMENZAR TRANSFORMACIÓN</span>
                     <span class="btn__glow"></span>
                 </button>
@@ -329,14 +360,27 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <p>© 2026 AI FELIX PIXEL | Powered by Quantum Intelligence | Sistema v2.0-ALPHA</p>
+            <p style="margin-top: 15px; font-size: 10px; color: var(--gray-l);">
+                <a href="https://github.com/felipeVcreadorl/aifelixpixel" style="color: var(--primary-neon); text-decoration: none;">GitHub</a> | 
+                <a href="#contact" style="color: var(--primary-neon); text-decoration: none;">Contacto</a>
+            </p>
         </div>
     </footer>
 
     <!-- CURSOR CUSTOM -->
-    <div class="cursor" id="cursor"></div>
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+    <!-- Service Worker para PWA -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').catch(() => {
+                console.log('Service Worker no disponible');
+            });
+        }
+    </script>
 
     <script src="script.js"></script>
 </body>

@@ -3,153 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI FELIX PIXEL - Publicidad y Marketing Digital con IA. Transforma tu negocio con estrategias innovadoras.">
-    <meta name="keywords" content="marketing digital, IA, publicidad, analytics, estrategia digital">
+    <meta name="description" content="AI FELIX PIXEL - Plataforma Futurista de Marketing Digital con IA. El futuro del marketing es ahora.">
+    <meta name="keywords" content="IA, marketing, futurista, tecnología, inteligencia artificial">
     <meta name="author" content="AI FELIX PIXEL">
-    <meta property="og:title" content="AI FELIX PIXEL — Publicidad & Marketing Digital">
-    <meta property="og:description" content="Revoluciona tu marketing con soluciones impulsadas por IA">
-    <meta property="og:type" content="website">
-    <meta name="theme-color" content="#000000">
-    <title>AI FELIX PIXEL — Publicidad & Marketing Digital</title>
+    <meta property="og:title" content="AI FELIX PIXEL — Plataforma Futurista">
+    <meta property="og:description" content="El futuro del marketing impulsado por IA">
+    <meta name="theme-color" content="#000">
+    <title>AI FELIX PIXEL — Plataforma Futurista</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- PARTICLES BACKGROUND -->
+    <div class="particles" id="particles"></div>
+
     <!-- HEADER -->
     <header class="header">
         <div class="header__container">
-            <div class="logo">AI FELIX PIXEL</div>
+            <div class="logo">
+                <span class="logo__symbol">◆</span>
+                <span class="logo__text">AI FELIX PIXEL</span>
+            </div>
             <button class="menu-toggle" id="menuToggle">☰</button>
         </div>
         <nav class="nav" id="nav">
-            <a href="#vision" class="nav__link">Visión</a>
-            <a href="#services" class="nav__link">Servicios</a>
-            <a href="#projects" class="nav__link">Proyectos</a>
-            <a href="#contact" class="nav__link">Contacto</a>
+            <a href="#vision" class="nav__link nav__link--animated">Visión IA</a>
+            <a href="#services" class="nav__link nav__link--animated">Servicios</a>
+            <a href="#dashboard" class="nav__link nav__link--animated">Dashboard</a>
+            <a href="#contact" class="nav__link nav__link--animated">Conexión</a>
         </nav>
     </header>
 
     <main>
-        <!-- HERO SECTION -->
+        <!-- HERO SECTION CON HOLOGRAM -->
         <section class="hero">
+            <div class="hero__grid"></div>
             <div class="hero__content">
+                <div class="hero__label">// INICIANDO SISTEMA IA</div>
                 <h1 class="hero__title">
-                    El futuro del marketing es hoy
+                    <span class="glitch" data-text="MARKETING">MARKETING</span>
+                    <span class="hologram">IMPULSADO</span>
+                    <span class="glitch" data-text="POR IA">POR IA</span>
                 </h1>
-                <p class="hero__subtitle">Inteligencia Artificial + Marketing Digital = Resultados extraordinarios</p>
-                <button class="btn btn--large" onclick="scrollToSection('contact')">Comienza ahora</button>
+                <p class="hero__subtitle">Algoritmos que aprenden. Estrategias que evolucionan. Resultados que transforman.</p>
+                
+                <div class="hero__stats">
+                    <div class="stat-box">
+                        <span class="stat-number" data-target="2000000">0</span>
+                        <span class="stat-label">Conversiones IA</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number" data-target="99">0</span>
+                        <span class="stat-label">% Precisión</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number" data-target="350">0</span>
+                        <span class="stat-label">% ROI</span>
+                    </div>
+                </div>
+
+                <button class="btn btn--neon" onclick="scrollToSection('contact')">
+                    <span class="btn__text">INICIAR SESIÓN IA</span>
+                    <span class="btn__glow"></span>
+                </button>
             </div>
-            <div class="hero__background"></div>
+
+            <!-- HOLOGRAM EFFECT -->
+            <div class="hologram-container">
+                <div class="hologram-box">
+                    <div class="hologram-inner">
+                        <div class="hologram-layer"></div>
+                        <div class="hologram-layer" style="animation-delay: 0.2s;"></div>
+                        <div class="hologram-layer" style="animation-delay: 0.4s;"></div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- VISION SECTION -->
-        <section id="vision" class="vision">
+        <!-- VISION AI SECTION -->
+        <section id="vision" class="vision-ai">
             <div class="container">
-                <div class="vision__grid">
-                    <div class="vision__item">
-                        <h2>Innovación</h2>
-                        <p>Tecnología de vanguardia para tu negocio</p>
+                <h2 class="section-title">MÓDULOS IA ACTIVOS</h2>
+                
+                <div class="vision-grid">
+                    <div class="ai-module" data-level="alpha">
+                        <div class="module-header">
+                            <span class="module-icon">⚡</span>
+                            <span class="module-status">ACTIVO</span>
+                        </div>
+                        <h3>Neural Analytics</h3>
+                        <p>Redes neuronales que predicen comportamientos de mercado en tiempo real</p>
+                        <div class="module-bar">
+                            <div class="module-fill" style="width: 95%"></div>
+                        </div>
                     </div>
-                    <div class="vision__item">
-                        <h2>Rapidez</h2>
-                        <p>Resultados en tiempo real</p>
+
+                    <div class="ai-module" data-level="beta">
+                        <div class="module-header">
+                            <span class="module-icon">🧠</span>
+                            <span class="module-status">ACTIVO</span>
+                        </div>
+                        <h3>Deep Learning</h3>
+                        <p>Algoritmos de aprendizaje profundo para optimización de campañas</p>
+                        <div class="module-bar">
+                            <div class="module-fill" style="width: 98%"></div>
+                        </div>
                     </div>
-                    <div class="vision__item">
-                        <h2>Precisión</h2>
-                        <p>IA que entiende tu audiencia</p>
+
+                    <div class="ai-module" data-level="gamma">
+                        <div class="module-header">
+                            <span class="module-icon">🌐</span>
+                            <span class="module-status">ACTIVO</span>
+                        </div>
+                        <h3>Quantum Processing</h3>
+                        <p>Procesamiento cuántico para cálculos masivos instantáneos</p>
+                        <div class="module-bar">
+                            <div class="module-fill" style="width: 87%"></div>
+                        </div>
                     </div>
-                    <div class="vision__item">
-                        <h2>Escalabilidad</h2>
-                        <p>Crece sin límites</p>
+
+                    <div class="ai-module" data-level="delta">
+                        <div class="module-header">
+                            <span class="module-icon">🔮</span>
+                            <span class="module-status">ACTIVO</span>
+                        </div>
+                        <h3>Vision AI</h3>
+                        <p>Visión por computadora para análisis de contenido multimedia</p>
+                        <div class="module-bar">
+                            <div class="module-fill" style="width: 92%"></div>
+                        </div>
+                    </div>
+
+                    <div class="ai-module" data-level="epsilon">
+                        <div class="module-header">
+                            <span class="module-icon">🎯</span>
+                            <span class="module-status">ACTIVO</span>
+                        </div>
+                        <h3>Predictive Engine</h3>
+                        <p>Motor predictivo con precisión a futuro de 99.7%</p>
+                        <div class="module-bar">
+                            <div class="module-fill" style="width: 99%"></div>
+                        </div>
+                    </div>
+
+                    <div class="ai-module" data-level="zeta">
+                        <div class="module-header">
+                            <span class="module-icon">🚀</span>
+                            <span class="module-status">ACTIVO</span>
+                        </div>
+                        <h3>Automation Suite</h3>
+                        <p>Suite completa de automatización inteligente</p>
+                        <div class="module-bar">
+                            <div class="module-fill" style="width: 94%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- SERVICES SECTION -->
-        <section id="services" class="services">
+        <section id="services" class="services-futuristic">
             <div class="container">
-                <h2 class="section-title">Servicios</h2>
-                <div class="services__grid">
-                    <div class="service-card">
-                        <h3>Análisis IA</h3>
-                        <p>Predicciones precisas del comportamiento del consumidor</p>
+                <h2 class="section-title">SERVICIOS TECNOLÓGICOS</h2>
+                
+                <div class="services-matrix">
+                    <div class="service-terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-title">$ ANALYSIS_MODULE_01.exe</span>
+                            <span class="terminal-buttons"></span>
+                        </div>
+                        <div class="terminal-content">
+                            <p>> Análisis Predictivo IA</p>
+                            <p>> Estado: PROCESANDO...</p>
+                            <p class="text-neon">> Precisión: 99.8%</p>
+                        </div>
                     </div>
-                    <div class="service-card">
-                        <h3>Marketing Automático</h3>
-                        <p>Campañas que se optimizan solas</p>
+
+                    <div class="service-terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-title">$ AUTOMATION_MODULE_02.exe</span>
+                            <span class="terminal-buttons"></span>
+                        </div>
+                        <div class="terminal-content">
+                            <p>> Marketing Automatizado</p>
+                            <p>> Estado: OPTIMIZADO</p>
+                            <p class="text-neon">> Velocidad: Tiempo Real</p>
+                        </div>
                     </div>
-                    <div class="service-card">
-                        <h3>Estrategia Digital</h3>
-                        <p>Plan personalizado para tu marca</p>
+
+                    <div class="service-terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-title">$ STRATEGY_MODULE_03.exe</span>
+                            <span class="terminal-buttons"></span>
+                        </div>
+                        <div class="terminal-content">
+                            <p>> Estrategia Personalizada</p>
+                            <p>> Estado: GENERANDO...</p>
+                            <p class="text-neon">> Algoritmos: 10,000+</p>
+                        </div>
                     </div>
-                    <div class="service-card">
-                        <h3>ROI Máximo</h3>
-                        <p>Cada peso invertido genera retorno</p>
+
+                    <div class="service-terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-title">$ OPTIMIZATION_MODULE_04.exe</span>
+                            <span class="terminal-buttons"></span>
+                        </div>
+                        <div class="terminal-content">
+                            <p>> Optimización ROI</p>
+                            <p>> Estado: EN LÍNEA</p>
+                            <p class="text-neon">> Incremento: 350%+</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- STATS SECTION -->
-        <section class="stats">
+        <!-- DASHBOARD SECTION -->
+        <section id="dashboard" class="dashboard">
             <div class="container">
-                <div class="stats__grid">
-                    <div class="stat-item">
-                        <div class="stat-value">2M+</div>
-                        <div class="stat-label">Visualizaciones</div>
+                <h2 class="section-title">PANEL DE CONTROL IA</h2>
+                
+                <div class="dashboard-grid">
+                    <div class="widget">
+                        <div class="widget__header">Real-Time Analytics</div>
+                        <div class="widget__chart">
+                            <div class="chart-bar" style="height: 60%"></div>
+                            <div class="chart-bar" style="height: 75%"></div>
+                            <div class="chart-bar" style="height: 45%"></div>
+                            <div class="chart-bar" style="height: 90%"></div>
+                            <div class="chart-bar" style="height: 70%"></div>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-value">350%</div>
-                        <div class="stat-label">Aumento de Ventas</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">500K+</div>
-                        <div class="stat-label">Descargas de Apps</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value">98%</div>
-                        <div class="stat-label">ROI Promedio</div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- PROJECTS SECTION -->
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2 class="section-title">Proyectos Destacados</h2>
-                <div class="projects__grid">
-                    <div class="project">
-                        <div class="project__title">Campaña Viral 🎬</div>
-                        <p>2M visualizaciones en 30 días</p>
+                    <div class="widget">
+                        <div class="widget__header">Performance Index</div>
+                        <div class="circular-progress">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" class="circle-bg"></circle>
+                                <circle cx="50" cy="50" r="45" class="circle-progress" style="--progress: 92"></circle>
+                            </svg>
+                            <div class="progress-text">92%</div>
+                        </div>
                     </div>
-                    <div class="project">
-                        <div class="project__title">App Marketing 📱</div>
-                        <p>500K+ descargas con estrategia IA</p>
+
+                    <div class="widget">
+                        <div class="widget__header">Active Campaigns</div>
+                        <div class="campaign-list">
+                            <div class="campaign-item">
+                                <div class="campaign-dot active"></div>
+                                <div class="campaign-info">
+                                    <div class="campaign-name">Campaign Alpha</div>
+                                    <div class="campaign-status">↑ 234% ROI</div>
+                                </div>
+                            </div>
+                            <div class="campaign-item">
+                                <div class="campaign-dot active"></div>
+                                <div class="campaign-info">
+                                    <div class="campaign-name">Campaign Beta</div>
+                                    <div class="campaign-status">↑ 187% ROI</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project">
-                        <div class="project__title">E-commerce 🛍️</div>
-                        <p>350% incremento en ventas</p>
+
+                    <div class="widget">
+                        <div class="widget__header">System Status</div>
+                        <div class="status-items">
+                            <div class="status-item">
+                                <span class="status-dot online"></span>
+                                <span>Servers: Online</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-dot online"></span>
+                                <span>AI Cores: 512/512</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-dot online"></span>
+                                <span>Network: Optimal</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- CONTACT SECTION -->
-        <section id="contact" class="contact">
+        <section id="contact" class="contact-futuristic">
             <div class="container">
-                <h2 class="section-title">Hablemos</h2>
-                <form class="contact__form" id="contactForm">
+                <h2 class="section-title">INICIALIZAR CONEXIÓN</h2>
+                
+                <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <input type="text" placeholder="Tu nombre" required>
+                        <input type="text" placeholder=">> Nombre del Usuario" required>
+                        <span class="input-line"></span>
                     </div>
+                    
                     <div class="form-group">
-                        <input type="email" placeholder="Tu email" required>
+                        <input type="email" placeholder=">> Email de Conexión" required>
+                        <span class="input-line"></span>
                     </div>
+                    
                     <div class="form-group">
-                        <textarea placeholder="Tu mensaje" required rows="4"></textarea>
+                        <textarea placeholder=">> Mensaje IA" required rows="4"></textarea>
+                        <span class="input-line"></span>
                     </div>
-                    <button type="submit" class="btn btn--large">Enviar</button>
+
+                    <button type="submit" class="btn btn--neon btn--large">
+                        <span class="btn__text">TRANSMITIR DATOS</span>
+                        <span class="btn__glow"></span>
+                    </button>
                 </form>
             </div>
         </section>
@@ -157,9 +318,12 @@
         <!-- CTA FINAL -->
         <section class="cta-final">
             <div class="container">
-                <h2>¿Listo para transformar tu marketing?</h2>
-                <p>No esperes más. El futuro es ahora.</p>
-                <button class="btn btn--large" onclick="scrollToSection('contact')">Comienza tu transformación</button>
+                <h2>EL FUTURO DEL MARKETING ES AHORA</h2>
+                <p>Únete a la revolución de la Inteligencia Artificial</p>
+                <button class="btn btn--neon btn--large" onclick="scrollToSection('contact')">
+                    <span class="btn__text">COMENZAR TRANSFORMACIÓN</span>
+                    <span class="btn__glow"></span>
+                </button>
             </div>
         </section>
     </main>
@@ -167,9 +331,12 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 AI FELIX PIXEL. Construyendo el futuro.</p>
+            <p>© 2026 AI FELIX PIXEL | Powered by Quantum Intelligence | Sistema v2.0-ALPHA</p>
         </div>
     </footer>
+
+    <!-- CURSOR CUSTOM -->
+    <div class="cursor" id="cursor"></div>
 
     <script src="script.js"></script>
 </body>

@@ -1,0 +1,42 @@
+{
+  "name": "AI FELIX PIXEL - Plataforma Futurista",
+  "short_name": "AI FELIX PIXEL",
+  "description": "Plataforma de Marketing Digital con Inteligencia Artificial - El futuro del marketing es ahora",
+  "start_url": "/aifelixpixel/",
+  "scope": "/aifelixpixel/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#00d9ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%23000'/><text x='50%' y='50%' font-size='80' fill='%2300d9ff' text-anchor='middle' dominant-baseline='central' font-family='Arial' font-weight='bold'>◆</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect fill='%23000'/><text x='50%' y='50%' font-size='300' fill='%2300d9ff' text-anchor='middle' dominant-baseline='central' font-family='Arial' font-weight='bold'>◆</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 720'><rect fill='%23000'/><text x='50%' y='50%' font-size='100' fill='%2300d9ff' text-anchor='middle' dominant-baseline='central' font-family='Arial' font-weight='bold'>AI FELIX PIXEL</text></svg>",
+      "sizes": "540x720",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 720'><rect fill='%23000'/><text x='50%' y='50%' font-size='100' fill='%2300d9ff' text-anchor='middle' dominant-baseline='central' font-family='Arial' font-weight='bold'>AI FELIX PIXEL</text></svg>",
+      "sizes": "1280x720",
+      "form_factor": "wide"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "screenshots_alt": {
+    "en": "AI FELIX PIXEL - Futuristic AI Marketing Platform",
+    "es": "AI FELIX PIXEL - Plataforma de Marketing con IA"
+  }
+}
